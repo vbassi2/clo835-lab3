@@ -10,18 +10,11 @@ spec:
   - name: mycontainer
     image: mmumshad/simple-webapp-color:latest
     env:
-    - name: COLOR
+    - name: APP_COLOR
       valueFrom: 
         configMapKeyRef:
           name: my-config
           key: APP_COLOR
-    volumeMounts:
-    - name: html
-      mountPath: /var/htdocs
     ports:
     - containerPort: 8080
       protocol: TCP
-  volumes:
-  - name: html
-    emptyDir: {}
-

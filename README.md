@@ -2,6 +2,7 @@
 # 🚀 Kubernetes Guestbook Application on AWS EKS
 
 ## 📌 Overview
+
 This project demonstrates deployment of a multi-tier Guestbook application on Amazon EKS using Kubernetes. It covers storage, networking, and configuration management concepts including dynamic provisioning, static volumes, ConfigMaps, and Secrets. The objective of this project is to build and deploy your application on Amazon EKS using persistent storage, K8s service of type LoadBalancer and K8s secrets to access
 MongoDB. The application will use hardcode the COLOR as env variable, use K8s ConfigMap, & secrets  to configure background color.
 ---
